@@ -3,10 +3,10 @@ class triangle
     private double height;
     private double base;
 
-    public triangle(double h, double b)
+    public triangle(double height, double base)
     {
-        height = h;
-        base = b;
+        this.height = height;
+        this.base = base;
     }
 
     public void setHeight(double x)

@@ -6,15 +6,15 @@ class Grade
     private double Mark;
     private char Grade;
 
-    public Grade(String n,int r,double m)
+    public Grade(String Name,int Roll,double Mark)
     {
-        Name = n;
-        Roll = r;
-        Mark = m;
-        Grade = Grade_calculation();
+        this.Name = Name;
+        this.Roll = Roll;
+        this.Mark = Mark;
+        this.Grade = GradeCalculation();
     }
 
-    private char Grade_calculation()
+    private char GradeCalculation()
     {
         if(Mark >= 80)
             return 'A';
@@ -31,7 +31,6 @@ class Grade
 
     public void display()
     {
-        System.out.println("////////////////");
         System.out.println("Name : " + Name);
         System.out.println("Roll : " + Roll);
         System.out.println("Mark : " + Mark);
