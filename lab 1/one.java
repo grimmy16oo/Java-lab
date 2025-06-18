@@ -8,17 +8,6 @@ public class one{
         int x = stdin.nextInt();
         int y = stdin.nextInt();
 
-        // if( x>y )
-        // {
-        //     System.out.println("max : " + x);
-        //     System.out.println("min : " + y);
-        // }
-        // else
-        // {
-        //     System.out.println("max : " + y);
-        //     System.out.println("min : " + x);
-        // }
-
         System.out.println("maximum number : " + Math.max(x,y));
         System.out.println("minimum number : " + Math.min(x,y) );
 

@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 class NegativeNumberException extends Exception 
@@ -8,19 +7,15 @@ class NegativeNumberException extends Exception
         super(message);
     }
 }
-
 class SmallerFirstNumberException extends Exception 
 {
-
     public SmallerFirstNumberException(String message) 
     {
         super(message);
     }
 }
-
 class DivideByZeroException extends Exception 
 {
-
     public DivideByZeroException(String message) 
     {
         super(message);
@@ -67,9 +62,21 @@ public class NumberCheck {
         {
             checkMultiple(num1, num2);
         } 
+        catch (NegativeNumberException e) 
+        {
+            System.out.println("Error: " + e.getMessage());
+        }
+        catch (SmallerFirstNumberException e) 
+        {
+            System.out.println("Error: " + e.getMessage());
+        }
+        catch (DivideByZeroException e) 
+        {
+            System.out.println("Error: " + e.getMessage());
+        }
         catch (Exception e) 
         {
-            System.out.println("Exception caught: " + e.getMessage());
+            System.out.println("Invalid input. Please enter integers only.");
         }
     }
 }

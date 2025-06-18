@@ -33,7 +33,7 @@ class CreditCard implements PaymentMethod {
     @Override
     public void processPayment(double amount) 
     {
-        if (authorizePayment(amount)) 
+        if (authorizePayment(amount) == true) 
         {
             System.out.println("processing " + amount + " tk");
         } 
@@ -46,7 +46,7 @@ class CreditCard implements PaymentMethod {
     @Override
     public void refundPayment(double amount)
      {
-        if (authorizePayment(amount))
+        if (authorizePayment(amount) == true)
         {
             System.out.println("refunding " + amount + " tk");
         } 
@@ -84,7 +84,7 @@ class Paypal implements PaymentMethod {
     @Override
     public void processPayment(double amount) 
     {
-        if (authorizePayment(amount)) 
+        if (authorizePayment(amount) == true) 
         {
             System.out.println("processing " + amount + " tk");
         } 
@@ -97,7 +97,7 @@ class Paypal implements PaymentMethod {
     @Override
     public void refundPayment(double amount) 
     {
-        if (authorizePayment(amount)) 
+        if (authorizePayment(amount) == true) 
         {
             System.out.println("refunding " + amount + " tk");
         } 
